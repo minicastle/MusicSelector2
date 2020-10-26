@@ -10,8 +10,6 @@ class ListAdd extends React.Component {
           method="post"
           onSubmit={function (e) {
             e.preventDefault();
-            let Data = [];
-            Data = MusicList;
             //event.target[0].value === Group e.target[1].value === Title e.target[2].value === Url
             if (e.target[0].value === "ArList") {
               MusicList.ArList.Title.push(e.target[1].value);

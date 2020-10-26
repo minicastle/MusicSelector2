@@ -1,5 +1,6 @@
 import React from "react";
 import MusicList from "../Data/MusicList.json";
+
 class RandomMrList extends React.Component {
   getCode(_base) {
     let words1 = _base.split("https://www.youtube.com/watch?v=");

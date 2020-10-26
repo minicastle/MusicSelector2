@@ -1,5 +1,4 @@
 import React from "react";
-import MusicList from "../Data/MusicList.json";
 
 class SearchContentsOutput extends React.Component{
     getCode(_base) {
