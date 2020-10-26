@@ -24,6 +24,7 @@ class ArList extends React.Component {
             {i + 1}. {MusicList.ArList.Title[i]}
           </h2>
           <iframe
+            title = {MusicList.ArList.Title[i]}
             width="560"
             height="315"
             src={this.getCode(MusicList.ArList.src[i])}

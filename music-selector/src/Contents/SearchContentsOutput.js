@@ -23,6 +23,7 @@ class SearchContentsOutput extends React.Component{
               {this.props.status[i]} - {this.props.title[i]}
             </h2>
             <iframe
+              title = {this.props.title[i]}
               width="560"
               height="315"
               src={this.getCode(this.props.url[i])}

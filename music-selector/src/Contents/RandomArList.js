@@ -21,6 +21,7 @@ class RandomArList extends React.Component {
       <div>
         <h2>{MusicList.ArList.Title[i]}</h2>
         <iframe
+          title = {MusicList.ArList.Title[i]}
           width="760"
           height="515"
           src={this.getCode(MusicList.ArList.src[i])}

@@ -24,6 +24,7 @@ class MrList extends React.Component {
             {i + 1}. {MusicList.MrList.Title[i]}
           </h2>
           <iframe
+            title = {MusicList.MrList.Title[i]}
             width="560"
             height="315"
             src={this.getCode(MusicList.MrList.src[i])}
