@@ -39,7 +39,6 @@ class SearchContents extends React.Component {
   }
   render() {
     return (
-      <div>
         <form
           onSubmit = {function(e){
             e.preventDefault();
@@ -54,11 +53,12 @@ class SearchContents extends React.Component {
           id="Search_item"
           type="search"
           ></input>
-          <SearchContentsOutput status = {this.state.Status}
-              title = {this.state.Title}
-              url = {this.state.Url}></SearchContentsOutput>
+          <SearchContentsOutput
+            status = {this.state.Status}
+            title = {this.state.Title}
+            url = {this.state.Url}>
+            </SearchContentsOutput>
         </form>
-      </div>
   );
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./../Contents_CSS/Select_service.css";
 
-class Select_service extends React.Component {
+class Selectservice extends React.Component {
   render() {
     return (
       <div className="Select-service">
@@ -53,4 +53,4 @@ class Select_service extends React.Component {
   }
 }
 
-export default Select_service;
+export default Selectservice;

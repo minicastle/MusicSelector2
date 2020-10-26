@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Select_service from "./Contents/Select_service";
+import Selectservice from "./Contents/Select_service";
 import ArList from "./Contents/ArList";
 import MrList from "./Contents/MrList";
 import RandomArList from "./Contents/RandomArList";
@@ -23,11 +23,11 @@ class App extends React.Component {
     let _contents;
     if (_mode === "default") {
       _contents = (
-        <Select_service
+        <Selectservice
           onclick_selected_page={function (_mode) {
             this.setState({ Mode: _mode });
           }.bind(this)}
-        ></Select_service>
+        ></Selectservice>
       );
     } else if (_mode === "ArList") {
       _contents = <ArList></ArList>;
