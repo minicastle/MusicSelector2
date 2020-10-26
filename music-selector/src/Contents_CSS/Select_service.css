@@ -1,0 +1,20 @@
+.Select-service {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  font-size: 30px;
+}
+.Select-service .Select-service-list {
+  border: solid 2px aquamarine;
+  margin-top: 100px;
+}
+.Select-service .Select-service-list p {
+  padding-left: 23%;
+  color: aquamarine;
+}
+.Select-service .Select-service-list li {
+  margin: 50px 50px 50px 0;
+}
+.Select-service .Select-service-list li a {
+  color: aqua;
+}

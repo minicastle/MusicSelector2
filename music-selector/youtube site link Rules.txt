@@ -1,0 +1,23 @@
+let str = 'https://www.youtube.com/embed/lj4NUxBOJi0';
+
+let words1 = str.split('https://www.youtube.com/watch?v=');
+let words2 = str.split('https://youtu.be/');
+let words3 = str.split('https://www.youtube.com/embed/');
+
+if(words1[1] !== undefined){
+console.log("https://www.youtube.com/embed/"+words1[1]);
+}
+else if(words2[1] !== undefined){
+console.log("https://www.youtube.com/embed/"+words2[1]);
+}
+else if(words3[1] !== undefined){
+console.log("https://www.youtube.com/embed/"+words3[1]);
+}
+
+==============================================================
+
+https://www.youtube.com/watch?v=lj4NUxBOJi0	) = viewer
+
+https://youtu.be/lj4NUxBOJi0			) = share
+
+https://www.youtube.com/embed/lj4NUxBOJi0	) = source code share
