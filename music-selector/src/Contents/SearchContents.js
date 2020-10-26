@@ -39,26 +39,29 @@ class SearchContents extends React.Component {
   }
   render() {
     return (
-        <form
-          onSubmit = {function(e){
-            e.preventDefault();
-            {this.getSearchData(e.target[0].value)}
-            //e.target[0].value
-          }.bind(this)}
-        >
-          <input
-          className="Serch"
-          name = "Search"
-          placeholder="Serch Contents"
-          id="Search_item"
-          type="search"
-          ></input>
-          <SearchContentsOutput
-            status = {this.state.Status}
-            title = {this.state.Title}
-            url = {this.state.Url}>
-            </SearchContentsOutput>
-        </form>
+      <div>
+      <form
+        onSubmit = {function(e){
+          e.preventDefault();
+          {this.getSearchData(e.target[0].value)}
+          //e.target[0].value
+        }.bind(this)}
+      >
+        <input
+        className="Serch"
+        name = "Search"
+        placeholder="Serch Contents"
+        id="Search_item"
+        type="search"
+        ></input>
+      </form>
+        <SearchContentsOutput
+          status = {this.state.Status}
+          title = {this.state.Title}
+          url = {this.state.Url}>
+          </SearchContentsOutput>
+
+      </div>
   );
   }
 }
