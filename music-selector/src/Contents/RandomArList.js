@@ -36,10 +36,10 @@ class RandomArList extends React.Component {
     <div>
       {this.getRandomint()}
       <div className = "nextButton">
-        <a onClick = {function(e){
+        <span onClick = {function(e){
           e.preventDefault();
           this.props.onclick_selected_page("RArList");
-        }.bind(this)}><i class="fas fa-angle-double-right"></i></a>
+        }.bind(this)}><i class="fas fa-angle-double-right"></i></span>
       </div>
     </div>
     );

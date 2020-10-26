@@ -15,6 +15,6 @@
 .Select-service .Select-service-list li {
   margin: 50px 50px 50px 0;
 }
-.Select-service .Select-service-list li a {
+.Select-service .Select-service-list li span {
   color: aqua;
 }

@@ -8,48 +8,44 @@ class Select_service extends React.Component {
         <ul className="Select-service-list">
           <p>Service List</p>
           <li>
-            <a
-              href="/ArList"
+            <span
               onClick={function (e) {
                 e.preventDefault();
                 this.props.onclick_selected_page("ArList");
               }.bind(this)}
             >
               1. AR List
-            </a>
+            </span>
           </li>
           <li>
-            <a
-              href="/MrList"
+            <span
               onClick={function (e) {
                 e.preventDefault();
                 this.props.onclick_selected_page("MrList");
               }.bind(this)}
             >
               2. MR List
-            </a>
+            </span>
           </li>
           <li>
-            <a
-              href="/RArList"
+            <span
               onClick={function (e) {
                 e.preventDefault();
                 this.props.onclick_selected_page("RArList");
               }.bind(this)}
             >
               3. Random AR Select
-            </a>
+            </span>
           </li>
           <li>
-            <a
-              href="/RMrList"
+            <span
               onClick={function (e) {
                 e.preventDefault();
                 this.props.onclick_selected_page("RMrList");
               }.bind(this)}
             >
               4. Random MR Select
-            </a>
+            </span>
           </li>
         </ul>
       </div>

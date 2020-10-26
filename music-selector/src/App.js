@@ -63,7 +63,10 @@ class App extends React.Component {
     return (
       <div className="Music-selector">
         <header className="Music-selector-title">
-          <a href="/home">Music-Selector</a>
+          <span onClick = {function(e){
+            e.preventDefault();
+            window.location.reload();
+          }}>Music-Selector</span>
         </header>
         <SelectOption onclick_options = {function(Selected_option){
         this.setState({Option : Selected_option});
